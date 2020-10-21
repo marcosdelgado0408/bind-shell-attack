@@ -55,7 +55,7 @@ Além disso, foram realizados outros tipos de análise
 
 - Nos status do processo é possivel ver o PID dos processos pai desse processo.
 
-Além do bind shell atack, existe o reverse shell atack, onde o computador de ataque fica a espera que o computador da vítima se conecte a ele, ou seja, o computador do atacante só precisa declarar que porta ele estará escutando, e assim o computador do alvo precisa se conectar ao ip e porta do atacante, além transmitir o executável do bash ou cmd.
+Além do bind shell atack, existe o reverse shell atack, onde o computador de ataque fica à espera que o computador da vítima se conecte a ele, ou seja, o computador do atacante só precisa declarar que porta ele estará escutando, e assim o computador do alvo precisa se conectar ao ip e porta do atacante, além transmitir o executável do bash ou cmd.
 
 ex:
 
