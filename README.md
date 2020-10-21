@@ -15,4 +15,10 @@ Na atividade o netcat abre a porta tcp 41000 e envia informações para /dev/nul
 
 ![freedom](https://user-images.githubusercontent.com/44793167/96667221-06003680-132f-11eb-868f-c891f98685aa.jpg)
 
+Após isso, na atividade era necessário utilizar o "nestat -nalp" para verificar a porta que esta aberta e o processo que está ocorrendo naquela porta, porém meu netstat não estava funcionando, mas foi possivel ver o processo em execução através do "ps", com o PID 16725.
 
+![ps](https://user-images.githubusercontent.com/44793167/96667414-7018db80-132f-11eb-8ec3-24d72cb90de8.jpg)
+
+Com o PID do nosso processo duvidoso, foi possível ver diversas informações sobre ele:
+
+![info](https://user-images.githubusercontent.com/44793167/96667592-b5d5a400-132f-11eb-9272-0a0897fbe5ba.jpg)
