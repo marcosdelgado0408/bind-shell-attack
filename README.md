@@ -22,3 +22,7 @@ Após isso, na atividade era necessário utilizar o "nestat -nalp" para verifica
 Com o PID do nosso processo duvidoso, foi possível ver diversas informações sobre ele:
 
 ![info](https://user-images.githubusercontent.com/44793167/96667592-b5d5a400-132f-11eb-9272-0a0897fbe5ba.jpg)
+
+Com isso, foi possivel ver que o arquivo binário do processo foi apagado, e assim foi necessário recuperar o arquivo binário apagado.
+
+- Utilizando o comando:  cp /proc/16725/exe /tmp/recovered_bin
