@@ -33,3 +33,26 @@ Para saber se a pessoa que atava o computador da vítima estava utilzando o netc
 
 E assim sabemos que o processo era o netcat, só que camuflado.
 
+Além disso, foram realizados outros tipos de análise
+
+![cmdline](https://user-images.githubusercontent.com/44793167/96668463-95a6e480-1331-11eb-9807-40b0c8dade13.jpg)
+
+- Através dessa análise do comand line, é possivel notar que os nomes estão diferentes, sendo características de programas maliciosos, pois esse programa está mascarado com um nome diferente do seu nome original.
+
+![enviro](https://user-images.githubusercontent.com/44793167/96668766-3eedda80-1332-11eb-8571-30c584f46daf.jpg)
+
+- Através do enviroment do processo podemos ver quem ou o que iniciou o processo
+
+![fd](https://user-images.githubusercontent.com/44793167/96668962-ac9a0680-1332-11eb-9623-732d471f28e7.jpg)
+
+- Pelos file descriptors é possivel saber diretórios ou arquivos que o processo está usando para armazenar coisas, juntamente com seus sockets abertos
+
+![maps](https://user-images.githubusercontent.com/44793167/96669192-203c1380-1333-11eb-9b37-159465b2b74f.jpg)
+
+- Pelos process maps é possivel saber que bibliotecas o processo estava utilizando, além de ser possivel que apareçam links para arquivos maliciosos que o processo estava utilizando.
+
+![status](https://user-images.githubusercontent.com/44793167/96669468-ab1d0e00-1333-11eb-9516-595d0121f89a.jpg)
+
+- Nos status do processo é possivel ver o PID dos processos pai desse processo.
+
+
