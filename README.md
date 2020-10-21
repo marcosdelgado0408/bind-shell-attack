@@ -13,5 +13,6 @@ Ex:
   
 Na atividade o netcat abre a porta tcp 41000 e envia informações para /dev/null do computador da vitima. Além disso ele mascara o nome do programa para "freedom",é colocado no diretorio /tmp(arquivos temporários), e após executado é removido, sobrando apenas o seu processo em execução.
 
+![freedom](https://user-images.githubusercontent.com/44793167/96667221-06003680-132f-11eb-868f-c891f98685aa.jpg)
 
 
