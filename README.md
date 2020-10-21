@@ -27,11 +27,11 @@ Com isso, foi possivel ver que o arquivo binário do processo foi apagado, e ass
 
 - Utilizando o comando:  cp /proc/16725/exe /tmp/recovered_bin
 
-Para saber se a pessoa que atava o computador da vítima estava utilzando o netcat, podemos comparar as hashes dos dois programas, e assim ver se als são iguais.
+Para saber se a pessoa que atacava o computador da vítima estava utilzando o netcat, podemos comparar as hashes dos dois programas, e assim ver se eles são iguais.
 
 ![hashes](https://user-images.githubusercontent.com/44793167/96668117-da7e4b80-1330-11eb-9a5b-cfd2679cfcfd.jpg)
 
-E assim sabemos que o processo era o netcat, só que camuflado.
+Dessa forma sabemos que o processo era o netcat, só que camuflado.
 
 Além disso, foram realizados outros tipos de análise
 
